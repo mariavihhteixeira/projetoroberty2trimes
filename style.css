@@ -60,6 +60,6 @@ display: block;
 }
 .ativo{
   background-color: var (--botao-ativo);
-  border-botton: 4 px solid var (--verde);
+  border-bottom: 4 px solid var (--verde);
 }
 

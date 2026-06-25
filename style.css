@@ -4,16 +4,16 @@
     --branco:#ffffff;
     --botao-ativo: rgba(58, 55, 94, 0.3);
     --botao-inativo: rgba(58, 55, 94, 0.3);
-    
+   
     }
-    
+   
     body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
     }
-    
-    
+   
+   
     .conteudo-pricipal{
     display: flex;
     flex-direction: column;
@@ -23,18 +23,18 @@
     width: 100%;
     margin: 0 auto;
     }
-    
+   
     .titulo-principal{
     text-align: left;
     width: 100%;
     font-size: 32px;
-    
+   
     }
-    
+   
     .titulo-principal span{
     color: var(--verde);
     }
-    
+   
     .botao{
     font-family: "Chakra Petch", sans-serif;
     background-color: var(--botao-inativo);
@@ -49,46 +49,67 @@
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
-    
-    
+   
+   
     }
-    
+   
     .botao:first-child {
     border-radius: 40px 40px 0 0;
     }
-    
+   
     .botoes {
     display: block;
     }
-    
+   
     .ativo{
-    
+   
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
     }
-    .abas-texto{
-        background-color: var(-texto-fundo);
+   
+    .aba-textos{
+        background-color: var(--texto-fundo);
         padding: 40px;
     }
-    .aba-conteudo-titulo-pincipal{
+    .aba-conteudo-titulo-principal{
         font-size: 28px;
-        text-align:center;
-
+        text-align: center;
     }
     .aba-conteudo-titulo-secundario{
-        text-align:center;
-        color:var(--verde);
-        text-transform:uppercase;
+        text-align: center;
+        color: var(--verde);
+        text-transform: uppercase;
     }
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-    @media screen and (min-width:768px){
+.contador-digito{
+padding: 0 16px;
+text-align: center;
+min-width: 100px;
+
+}
+.contador-digito-numero{
+font-size: 80px;
+margin: 0;
+
+}
+.contador-digito-titulo{
+color: var(--verde);
+font-size: 20px;
+margin: 0;
+}
+        @media screen and(min width:768 px){
         .botoes{
             display:flex;
         }
+        .botao:first-child{
+            border-radius: 40px 0 0 0;
+        }
+        .botao:last-child{
+            border-radius: 0 40 px 0 0;
+        }
     }
-
-    .botao:first-child{
-        border-radius:40px 000;
-    
-    }
-.botao:last-child
